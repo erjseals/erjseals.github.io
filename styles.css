@@ -1,5 +1,5 @@
 #player-container {
-  width: 70vw; /* Set the width to 70% of the viewport width */
-  height: 60vh; /* Set the height to 60% of the viewport height */
+  width: 50vw; /* Set the width to 70% of the viewport width */
+  height: 80vh; /* Set the height to 60% of the viewport height */
   margin: 0 auto; /* Center the player horizontally */
 }
