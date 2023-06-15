@@ -1,1 +1,6 @@
-/* need to add styling here */
+#player-container {
+  width: 300px; /* Set the desired width */
+  height: 600px; /* Set the desired height */
+  margin: 0 auto; /* Center the player horizontally */
+}
+
