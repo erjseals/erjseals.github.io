@@ -132,8 +132,17 @@ ul {
     list-style: none;
 }
 
-a {
+a,
+button {
     text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    box-shadow: none;
+    border: none;
 }
 
 img {
