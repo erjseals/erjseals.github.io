@@ -1153,10 +1153,17 @@ img {
     }
     .footer__links{
         flex-direction: row;
-        column-gap: 2rem;
+        justify-content: space-around;
+        /* column-gap: 2rem; */
     }
     .footer__socials{
-        justify-self: flex-end;
+        display: flex;
+        /* flex-direction: row; */
+        justify-self: end;
+    }
+    .footer__social{
+        margin-right: 0;
+        margin-left: var(--mb-1-5);
     }
     .footer__copy{
         margin-top: 4.5rem;
