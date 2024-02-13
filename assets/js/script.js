@@ -110,9 +110,6 @@ let swiper = new Swiper(".portfolio__container", {
     },
   });
 
-/*==================== TESTIMONIAL ====================*/
-
-
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
@@ -132,6 +129,27 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+/*==================== SEND MESSAGE ====================*/
+const form = document.getElementById('form');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData,
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Form submitted successfully!');
+                form.reset(); // Reset form fields after successful submission
+            } else {
+                alert('Submission failed, please try again.');
+            }
+        })
+        .catch(error => console.error('Error:', error));
+    });
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader(){
